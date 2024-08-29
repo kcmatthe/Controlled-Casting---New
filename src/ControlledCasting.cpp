@@ -10,7 +10,7 @@ namespace ControlledCasting {
 	
 	using namespace Settings;
 
-	//Calculates the charge time if a staff
+	//Calculates the charge time of a staff
 	float CalcStaffChargeTime(RE::MagicItem* magic, RE::MagicCaster* caster, RE::MagicSystem::CastingType casting, float time)
 	{
 		logger::debug("Calculating staff charge time");
@@ -36,7 +36,7 @@ namespace ControlledCasting {
 		return newTime;
 	}
 
-	//Calculates the charge time if a scroll
+	//Calculates the charge time of a scroll
 	float CalcScrollChargeTime(RE::MagicItem* magic, RE::MagicCaster* caster, RE::MagicSystem::CastingType casting, float time)
 	{
 
@@ -66,7 +66,7 @@ namespace ControlledCasting {
 		return newTime;
 	}
 
-	//Calculates the charge time if a normal spell
+	//Calculates the charge time of a normal spell
 	float CalcSpellChargeTime(RE::MagicItem* magic, RE::MagicCaster* caster, RE::MagicSystem::CastingType casting, float time)
 	{
 		int numeffects = magic->effects.size();
